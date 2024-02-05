@@ -39,7 +39,6 @@ function testEmail(array) {
             newArr.push(currentobj.email)
         }
     }
-    //console.log(newArr)
     return newArr
 }
 console.log(testEmail(arr))
