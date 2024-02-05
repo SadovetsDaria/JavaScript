@@ -97,16 +97,16 @@ function findValueByKey(companyName) {
         if (currentClient.name === companyName) {
             console.log(currentClient)
             return currentClient;
+        } else {
+            break
         }
-
         if (currentClient.partners && Array.isArray(currentClient.partners)) {
             companyClients.push(...currentClient.partners);
             i += currentClient.partners.length
         }
-        //console.log(companyClients.length)
     }
 
     console.log(`Компанію з назвою '${companyName}' не знайдено`)
 }
 
-findValueByKey('Клієнт 1.2.6')
+findValueByKey('Клінт 1.2.6')
